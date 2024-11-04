@@ -5,3 +5,5 @@ RUN apt-get update && apt-get -y install gcc && apt-get -y install libcap-dev &&
 RUN make isolate
 RUN make install
 RUN apt-get install -y dotnet-sdk-8.0
+RUN chmod +x csharp.sh
+RUN ./csharp.sh
